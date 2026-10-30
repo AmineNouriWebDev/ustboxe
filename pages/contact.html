@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Accès — UST BOXE Talence | Cours d'essai gratuit</title>
+  <meta name="description" content="Contactez l'UST BOXE à Talence. Salle Pierre de Coubertin, Rue Salvador Allende, 33400 Talence. Tél : 06 18 41 06 80. Cours d'essai gratuit pour toutes les disciplines." />
+  <link rel="canonical" href="https://ustboxe.fr/pages/contact.html" />
+  <meta property="og:title" content="Contact — UST BOXE Talence" />
+  <meta property="og:image" content="../assets/img/equipe.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    .contact-quick-btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .contact-quick-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      font-family: var(--font-sub);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid var(--gris-dark);
+      color: var(--blanc);
+      background: rgba(255,255,255,0.04);
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .contact-quick-btn:hover {
+      border-color: var(--rouge);
+      background: rgba(225,6,0,0.1);
+      color: var(--rouge);
+    }
+    .contact-quick-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .contact-quick-btn.whatsapp:hover { border-color: #25D366; background: rgba(37,211,102,0.1); color: #25D366; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    @media (max-width:600px) { .form-row { grid-template-columns: 1fr; } }
+    @media (max-width:768px) { .contact-grid { grid-template-columns:1fr; gap:40px; } }
+
+    /* Essai section highlight */
+    #essai {
+      scroll-margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ══ PAGE HERO ══ -->
+    <section class="page-hero" aria-label="Contact UST BOXE">
+      <img src="../assets/img/equipe.jpg" alt="Équipe UST BOXE Talence" class="page-hero-img" width="1400" height="500" loading="eager" />
+      <div class="page-hero-content container">
+        <div class="section-label" style="justify-content:center;">Restons en contact</div>
+        <h1>Contact <span class="grad-text">&amp; Accès</span></h1>
+        <p style="color:rgba(245,245,245,0.7); font-size:clamp(1rem,1.8vw,1.3rem); max-width:500px; margin:16px auto 0; font-family:var(--font-sub);">
+          On est là pour répondre à toutes vos questions. Contactez-nous !
+        </p>
+      </div>
+    </section>
+
+    <!-- ══ ESSAI GRATUIT HIGHLIGHT ══ -->
+    <section id="essai" style="padding:60px 0; background:var(--rouge);" aria-label="Cours d'essai gratuit">
+      <div class="container" style="display:flex; align-items:center; gap:40px; flex-wrap:wrap; justify-content:space-between;">
+        <div>
+          <h2 style="font-size:clamp(2rem,5vw,4rem); color:white; line-height:1;">Ton premier cours<br>est <u>GRATUIT</u></h2>
+          <p style="color:rgba(255,255,255,0.85); margin-top:12px; font-size:1.05rem; max-width:500px;">
+            Peu importe ton niveau, ton âge ou ton objectif — réserve ta séance découverte et viens voir ce qu'UST BOXE peut t'apporter !
+          </p>
+        </div>
+        <div>
+          <p style="color:rgba(255,255,255,0.7); font-size:0.85rem; margin-bottom:12px; font-family:var(--font-sub); letter-spacing:0.1em; text-transform:uppercase;">Inscriptions dès le 31 août 2026</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="tel:+33618410680" class="btn" style="background:white; color:var(--rouge); clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);" id="essai-tel-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Appeler le club
+            </a>
+            <a href="#contact-form" class="btn btn-outline" style="color:white; border-color:white;" id="essai-form-btn">
+              Envoyer un message ↓
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT MAIN ══ -->
+    <section class="section-pad bg-noir" id="contact-main" aria-label="Informations de contact et formulaire">
+      <div class="container contact-grid">
+
+        <!-- LEFT: Infos -->
+        <div>
+          <div class="section-label">Informations</div>
+          <h2 data-aos="fade-up" style="margin-bottom:32px;">Nous <span class="grad-text">contacter</span></h2>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Adresse</p>
+              <p class="contact-info-value">
+                Salle Pierre de Coubertin<br />
+                Rue Salvador Allende<br />
+                33400 Talence (Quartier Thouars)
+              </p>
+              <a href="https://maps.google.com/?q=44.789011,-0.5887291" target="_blank" rel="noopener noreferrer" style="color:var(--rouge); font-size:0.85rem; margin-top:6px; display:inline-block;" id="contact-maps-link">Voir sur Google Maps →</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Téléphone</p>
+              <p class="contact-info-value">
+                <a href="tel:+33618410680" style="font-size:1.2rem; color:var(--blanc);" id="contact-phone-link">06 18 41 06 80</a>
+              </p>
+              <p style="color:var(--gris); font-size:0.8rem; margin-top:4px;">Disponible de 18h à 21h</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-value">
+                <a href="mailto:a.nouiri@live.fr" style="color:var(--blanc);" id="contact-email-link">a.nouiri@live.fr</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Horaires de contact</p>
+              <p class="contact-info-value">Tous les jours de 18h à 21h</p>
+              <p style="color:var(--gris); font-size:0.8rem; margin-top:4px;">Pendant les heures d'entraînement</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item" style="border-bottom:none;">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Réseaux sociaux</p>
+              <a href="https://www.facebook.com/UST-BOXE-524842731004325/" target="_blank" rel="noopener noreferrer" style="color:var(--blanc); display:inline-flex; align-items:center; gap:8px;" id="contact-facebook-link">
+                Facebook UST BOXE →
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick contact buttons -->
+          <div class="contact-quick-btns" aria-label="Boutons de contact rapide">
+            <a href="tel:+33618410680" class="contact-quick-btn" id="quick-tel-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Appeler
+            </a>
+            <a href="https://wa.me/33618410680" target="_blank" rel="noopener noreferrer" class="contact-quick-btn whatsapp" id="quick-wa-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              WhatsApp
+            </a>
+            <a href="mailto:a.nouiri@live.fr" class="contact-quick-btn" id="quick-mail-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div id="contact-form">
+          <div class="section-label">Formulaire</div>
+          <h2 data-aos="fade-up" style="margin-bottom:32px;">Envoyer un <span class="grad-text">message</span></h2>
+
+          <!--
+            FORMSPREE: Remplacez "YOUR_FORMSPREE_ID" par votre vrai ID Formspree.
+            Créez un compte sur https://formspree.io/ et remplacez l'action du formulaire.
+            Ou utilisez le fallback mailto: ci-dessous.
+          -->
+          <form
+            id="contact-form-el"
+            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+            method="POST"
+            aria-label="Formulaire de contact UST BOXE"
+            novalidate
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-nom">Nom complet *</label>
+                <input
+                  type="text"
+                  id="contact-nom"
+                  name="nom"
+                  class="form-input"
+                  placeholder="Votre nom"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email *</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="votre@email.fr"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-tel">Téléphone</label>
+              <input
+                type="tel"
+                id="contact-tel"
+                name="telephone"
+                class="form-input"
+                placeholder="06 XX XX XX XX"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-discipline">Discipline souhaitée</label>
+              <select id="contact-discipline" name="discipline" class="form-select">
+                <option value="" disabled selected>Choisissez une discipline</option>
+                <option value="boxe-educative">Boxe éducative (6–13 ans)</option>
+                <option value="boxe-loisir">Boxe amateur / Loisir (13+)</option>
+                <option value="boxe-competition">Boxe compétition</option>
+                <option value="boxe-feminine">Boxe féminine</option>
+                <option value="aeroboxe">Aéroboxe / Fitness boxe</option>
+                <option value="sans-preference">Sans préférence / Je découvre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message *</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                class="form-textarea"
+                placeholder="Votre message, votre question, ou votre souhait de cours d'essai..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input type="hidden" name="_subject" value="Nouveau message UST BOXE" />
+            <input type="hidden" name="_next" value="merci.html" />
+
+            <button type="submit" class="btn btn-rouge" style="width:100%; justify-content:center; padding:18px;" id="contact-submit-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Envoyer le message
+            </button>
+
+            <p style="font-size:0.75rem; color:var(--gris); margin-top:12px; text-align:center;">
+              Ou contactez-nous directement :
+              <a href="mailto:a.nouiri@live.fr" style="color:var(--rouge);">a.nouiri@live.fr</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ MAP ══ -->
+    <section class="section-pad bg-anthracite clip-top" id="carte" aria-label="Carte et accès">
+      <div class="container">
+        <div class="section-label">Comment nous trouver</div>
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:32px;">
+          <h2 data-aos="fade-up">Salle Pierre <span class="grad-text">de Coubertin</span></h2>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=44.789011,-0.5887291" target="_blank" rel="noopener noreferrer" class="btn btn-rouge" id="contact-itineraire-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Itinéraire GPS
+          </a>
+        </div>
+
+        <div class="map-container" data-aos="fade-up" data-aos-delay="100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.7!2d-0.5887291!3d44.789011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQ3JzIwLjQiTiAwwrAzNScxOS40Ilc!5e0!3m2!1sfr!2sfr!4v1234567890"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Carte - Salle Pierre de Coubertin, Rue Salvador Allende, 33400 Talence"
+            aria-label="Carte Google Maps - Salle Pierre de Coubertin Talence"
+          ></iframe>
+        </div>
+
+        <div style="margin-top:24px; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;" data-aos="fade-up" data-aos-delay="150">
+          <div style="padding:20px; background:rgba(255,255,255,0.03); border:1px solid var(--gris-dark);">
+            <p style="font-family:var(--font-sub); font-size:0.75rem; font-weight:700; letter-spacing:0.2em; color:var(--gris); text-transform:uppercase; margin-bottom:8px;">En transports</p>
+            <p style="font-size:0.9rem; color:var(--blanc);">Tram ligne B — Arrêt Thouars<br>Bus lignes locales Talence</p>
+          </div>
+          <div style="padding:20px; background:rgba(255,255,255,0.03); border:1px solid var(--gris-dark);">
+            <p style="font-family:var(--font-sub); font-size:0.75rem; font-weight:700; letter-spacing:0.2em; color:var(--gris); text-transform:uppercase; margin-bottom:8px;">En voiture</p>
+            <p style="font-size:0.9rem; color:var(--blanc);">Parking disponible à la salle<br>GPS : 44.789011, -0.5887291</p>
+          </div>
+          <div style="padding:20px; background:rgba(255,255,255,0.03); border:1px solid var(--gris-dark);">
+            <p style="font-family:var(--font-sub); font-size:0.75rem; font-weight:700; letter-spacing:0.2em; color:var(--gris); text-transform:uppercase; margin-bottom:8px;">Quartier</p>
+            <p style="font-size:0.9rem; color:var(--blanc);">Quartier Thouars<br>33400 Talence, Gironde</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contact-form-el');
+      if (!form) return;
+
+      form.addEventListener('submit', async (e) => {
+        // If Formspree ID is not set, use mailto fallback
+        const action = form.getAttribute('action');
+        if (action && action.includes('YOUR_FORMSPREE_ID')) {
+          e.preventDefault();
+          const nom = document.getElementById('contact-nom').value;
+          const email = document.getElementById('contact-email').value;
+          const tel = document.getElementById('contact-tel').value;
+          const discipline = document.getElementById('contact-discipline').value;
+          const message = document.getElementById('contact-message').value;
+
+          if (!nom || !email || !message) {
+            alert('Merci de remplir les champs obligatoires (Nom, Email, Message).');
+            return;
+          }
+
+          const body = encodeURIComponent(
+            `Nom: ${nom}\nEmail: ${email}\nTéléphone: ${tel}\nDiscipline: ${discipline}\n\nMessage:\n${message}`
+          );
+          const subject = encodeURIComponent('Demande de contact — UST BOXE');
+          window.location.href = `mailto:a.nouiri@live.fr?subject=${subject}&body=${body}`;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

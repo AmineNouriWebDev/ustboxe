@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Message envoyé — UST BOXE Talence</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    .merci-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: var(--noir);
+      padding: 40px 20px;
+    }
+    .merci-icon {
+      font-size: 4rem;
+      margin-bottom: 24px;
+      display: block;
+      animation: pop 0.5s var(--ease-out) both;
+    }
+    @keyframes pop {
+      from { transform: scale(0); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <section class="merci-section">
+    <div>
+      <span class="merci-icon" aria-hidden="true">✅</span>
+      <h1 style="font-size:clamp(2.5rem,6vw,5rem); margin-bottom:16px;">Message <span class="grad-text">reçu !</span></h1>
+      <p style="color:var(--gris); max-width:500px; margin:0 auto 32px; font-size:1.1rem; line-height:1.7;">
+        Merci pour votre message ! L'équipe UST BOXE vous répondra dans les plus brefs délais, de 18h à 21h.
+      </p>
+      <a href="../index.html" class="btn btn-rouge" id="merci-home-btn">
+        ← Retour à l'accueil
+      </a>
+    </div>
+  </section>
+  <div id="footer-placeholder"></div>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

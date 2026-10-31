@@ -339,7 +339,7 @@ function initCountUp() {
       }
       requestAnimationFrame(update);
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.2 });
 
   counters.forEach(c => observer.observe(c));
 }

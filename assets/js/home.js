@@ -42,58 +42,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── DISCIPLINES CARDS PARALLAX ──
   gsap.utils.toArray('.discipline-card').forEach((card, i) => {
-    gsap.from(card, {
-      opacity: 0,
-      y: 60,
-      duration: 0.7,
-      delay: i * 0.08,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: card,
-        start: 'top 90%',
-        toggleActions: 'play none none none',
-      },
-    });
+    gsap.fromTo(card,
+      { opacity: 0, y: 60 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        delay: i * 0.08,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: card,
+          start: 'top 90%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
   });
 
   // ── STATS ENTRANCE ──
-  gsap.from('.stat-item', {
-    opacity: 0,
-    y: 40,
-    stagger: 0.15,
-    duration: 0.7,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: '.stats-grid',
-      start: 'top 80%',
-    },
-  });
+  gsap.fromTo('.stat-item',
+    { opacity: 0, y: 40 },
+    {
+      opacity: 1,
+      y: 0,
+      stagger: 0.15,
+      duration: 0.7,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: '.stats-grid',
+        start: 'top 85%',
+        toggleActions: 'play none none none',
+      },
+    }
+  );
 
   // ── AWARD CARDS STAGGER ──
-  gsap.from('.award-card', {
-    opacity: 0,
-    y: 50,
-    stagger: 0.12,
-    duration: 0.7,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: '.award-grid',
-      start: 'top 80%',
-    },
-  });
+  gsap.fromTo('.award-card',
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      stagger: 0.12,
+      duration: 0.7,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: '.award-grid',
+        start: 'top 85%',
+        toggleActions: 'play none none none',
+      },
+    }
+  );
 
   // ── PRICING CARDS ──
-  gsap.from('.pricing-card', {
-    opacity: 0,
-    y: 60,
-    stagger: 0.15,
-    duration: 0.7,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: '.pricing-grid',
-      start: 'top 80%',
-    },
-  });
+  gsap.fromTo('.pricing-card',
+    { opacity: 0, y: 60 },
+    {
+      opacity: 1,
+      y: 0,
+      stagger: 0.15,
+      duration: 0.7,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: '.pricing-grid',
+        start: 'top 85%',
+        toggleActions: 'play none none none',
+      },
+    }
+  );
+
+  // Refresh ScrollTrigger after assets and header/footer load
+  window.addEventListener('load', () => ScrollTrigger.refresh());
+  setTimeout(() => ScrollTrigger.refresh(), 500);
 
   // ── MARQUEE PAUSE ON HOVER ──
   const track = document.querySelector('.marquee-track');

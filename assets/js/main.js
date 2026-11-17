@@ -44,6 +44,12 @@ function injectHeader() {
   <div id="cursor-dot" aria-hidden="true"></div>
   <div id="cursor-ring" aria-hidden="true"></div>
 
+  <!-- Bandeau Promo -->
+  <div class="promo-topbar" role="banner">
+    <span>🥊 <strong>1er COURS D'ESSAI GRATUIT</strong> — Saison 2026-2027 à Talence</span>
+    <a href="${ROOT}pages/contact.html#essai">Réserver mon essai →</a>
+  </div>
+
   <header id="site-header" role="banner">
     <div class="container header-inner">
       <a href="${ROOT}index.html" class="site-logo" aria-label="UST BOXE - Accueil">
@@ -75,6 +81,9 @@ function injectHeader() {
     ${mobileLinks}
     <div class="mobile-menu-footer">
       <a href="${ROOT}pages/contact.html#essai" class="btn btn-rouge">Essai gratuit</a>
+      <button class="pwa-install-btn" id="pwa-btn-mobile" style="display:none; margin-top:12px; width:100%; justify-content:center;">
+        📲 Installer l'application
+      </button>
     </div>
   </nav>
   `;
@@ -159,8 +168,13 @@ function injectFooter() {
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-copy">© 2026 <span>UST BOXE</span> — Tous droits réservés. Union Sportive Talençaise Boxe.</p>
+        <p class="footer-copy">© 2026-2027 <span>UST BOXE</span> — Tous droits réservés. Union Sportive Talençaise Boxe.</p>
         <p class="footer-copy">Affilié à la <span>Fédération Française de Boxe</span></p>
+        <div style="width:100%; text-align:center; margin-top:10px;">
+          <button class="pwa-install-btn" id="pwa-btn-footer" style="display:none;">
+            📲 Installer l'application UST BOXE
+          </button>
+        </div>
       </div>
     </div>
 
@@ -377,6 +391,50 @@ function initPageLoader() {
 }
 
 /* ══════════════════════════════════════
+   PWA & SERVICE WORKER
+══════════════════════════════════════ */
+let deferredInstallPrompt = null;
+
+function initPWA() {
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      const swUrl = ROOT === './' ? './sw.js' : '../sw.js';
+      navigator.serviceWorker.register(swUrl)
+        .then((reg) => {
+          console.log('[PWA] Service Worker registered with scope:', reg.scope);
+        })
+        .catch((err) => {
+          console.warn('[PWA] Service Worker registration failed:', err);
+        });
+    });
+  }
+
+  // Intercept beforeinstallprompt for desktop & mobile
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    const btns = document.querySelectorAll('.pwa-install-btn');
+    btns.forEach((btn) => {
+      btn.style.display = 'inline-flex';
+      btn.onclick = async () => {
+        if (!deferredInstallPrompt) return;
+        deferredInstallPrompt.prompt();
+        const { outcome } = await deferredInstallPrompt.userChoice;
+        console.log(`[PWA] Install prompt outcome: ${outcome}`);
+        deferredInstallPrompt = null;
+        document.querySelectorAll('.pwa-install-btn').forEach((b) => (b.style.display = 'none'));
+      };
+    });
+  });
+
+  window.addEventListener('appinstalled', () => {
+    console.log('[PWA] UST BOXE app installed successfully.');
+    document.querySelectorAll('.pwa-install-btn').forEach((b) => (b.style.display = 'none'));
+  });
+}
+
+/* ══════════════════════════════════════
    INIT
 ══════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
@@ -390,4 +448,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackToTop();
   initTimeline();
   initCountUp();
+  initPWA();
 });

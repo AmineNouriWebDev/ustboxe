@@ -1,0 +1,54 @@
+{
+  "name": "UST BOXE Talence — Club de Boxe Anglaise",
+  "short_name": "UST BOXE",
+  "description": "Club de boxe anglaise à Talence (Gironde). Boxe éducative, amateur, loisir, compétition et aéroboxe. Saison 2026-2027.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "ust-boxe-talence-pwa",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0c",
+  "theme_color": "#e10600",
+  "lang": "fr",
+  "categories": ["sports", "fitness", "lifestyle"],
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Horaires & Tarifs",
+      "short_name": "Horaires",
+      "url": "pages/planning-tarifs.html",
+      "icons": [{ "src": "assets/img/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Cours d'essai gratuit",
+      "short_name": "Essai gratuit",
+      "url": "pages/contact.html#essai",
+      "icons": [{ "src": "assets/img/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Disciplines",
+      "short_name": "Disciplines",
+      "url": "pages/disciplines.html",
+      "icons": [{ "src": "assets/img/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

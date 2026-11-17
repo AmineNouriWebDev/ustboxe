@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UST BOXE — Club de Boxe à Talence | Gironde | Cours d'essai gratuit</title>
-  <meta name="description" content="UST BOXE, club de boxe à Talence (Gironde). Boxe éducative, amateur, compétition, féminine et aéroboxe. Cours d'essai gratuit. Affilié Fédération Française de Boxe." />
-  <meta name="keywords" content="boxe Talence, club boxe Gironde, UST BOXE, boxe éducative, boxe amateur, aéroboxe, cours boxe Bordeaux" />
+  <title>UST BOXE — Club de Boxe à Talence | Saison 2026-2027 | 1er cours d'essai gratuit</title>
+  <meta name="description" content="UST BOXE, club de boxe à Talence (Gironde) affilié FFBoxe. Boxe éducative (160€), loisir & amateur (260€), aéroboxe (260€). 1er cours d'essai gratuit !" />
+  <meta name="keywords" content="boxe Talence, club boxe Gironde, UST BOXE, boxe éducative, boxe amateur, aéroboxe, cours boxe Bordeaux, tarif boxe 2026" />
   <meta name="author" content="UST BOXE" />
   <link rel="canonical" href="https://ustboxe.com/" />
 
@@ -20,21 +20,28 @@
     gtag('js', new Date());
   </script>
 
+  <!-- PWA & Mobile Icons -->
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <meta name="theme-color" content="#e10600" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="UST BOXE" />
+  <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32.png" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ustboxe.com/" />
-  <meta property="og:title" content="UST BOXE — Forge ton énergie à Talence" />
-  <meta property="og:description" content="Club de boxe à Talence. 5 disciplines, cours pour tous les niveaux. Essai gratuit !" />
+  <meta property="og:title" content="UST BOXE — Club de Boxe à Talence | 1er cours d'essai gratuit" />
+  <meta property="og:description" content="Club de boxe à Talence. 5 disciplines, cours pour tous les niveaux. 1er cours d'essai gratuit !" />
   <meta property="og:image" content="./assets/img/equipe.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="UST BOXE — Forge ton énergie à Talence" />
-  <meta name="twitter:description" content="Club de boxe à Talence. 5 disciplines, cours pour tous les niveaux. Essai gratuit !" />
+  <meta name="twitter:description" content="Club de boxe à Talence. 5 disciplines, cours pour tous les niveaux. 1er cours d'essai gratuit !" />
   <meta name="twitter:image" content="./assets/img/equipe.jpg" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>" />
 
   <!-- Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,22 +49,28 @@
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
-  <!-- JSON-LD Structured Data -->
+  <!-- JSON-LD Structured Data (Schema.org compliant) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SportsClub",
     "name": "UST BOXE",
     "alternateName": "Union Sportive Talençaise Boxe",
-    "description": "Club de boxe affilié à la Fédération Française de Boxe. Boxe éducative, amateur, compétition, féminine et aéroboxe.",
+    "description": "Club de boxe anglaise à Talence (Gironde) affilié Fédération Française de Boxe. Boxe éducative, amateur, loisir, compétition, féminine et aéroboxe. Saison 2026-2027.",
     "url": "https://ustboxe.com",
     "telephone": "+33618410680",
     "email": "a.nouiri@live.fr",
+    "priceRange": "160€ - 360€",
+    "image": "https://ustboxe.com/assets/img/equipe.jpg",
+    "logo": "https://ustboxe.com/assets/img/icon-512.png",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Chèque, Virement bancaire, Espèces",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rue Salvador Allende",
       "addressLocality": "Talence",
       "postalCode": "33400",
+      "addressRegion": "Nouvelle-Aquitaine",
       "addressCountry": "FR"
     },
     "geo": {
@@ -66,13 +79,69 @@
       "longitude": -0.5887291
     },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "16:00", "closes": "21:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "19:00", "closes": "21:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "19:00", "closes": "21:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "19:30", "closes": "21:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "19:30", "closes": "21:00" }
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Wednesday", "Friday"],
+        "opens": "18:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Thursday"],
+        "opens": "19:30",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "16:00",
+        "closes": "17:30"
+      }
     ],
-    "sameAs": ["https://www.facebook.com/UST-BOXE-524842731004325/"]
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cotisations Saison 2026-2027",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Boxe Éducative (6-13 ans)",
+          "price": "160.00",
+          "priceCurrency": "EUR",
+          "description": "Initiation ludique et motricité pour les 6-13 ans. Mercredi 16h-17h30. 1er cours d'essai gratuit."
+        },
+        {
+          "@type": "Offer",
+          "name": "Boxe Loisir (+13 ans)",
+          "price": "260.00",
+          "priceCurrency": "EUR",
+          "description": "Boxe anglaise loisir tous niveaux. Lundi, mercredi, vendredi 18h-20h. 1er cours d'essai gratuit."
+        },
+        {
+          "@type": "Offer",
+          "name": "Boxe Amateur / Compétition (+13 ans)",
+          "price": "260.00",
+          "priceCurrency": "EUR",
+          "description": "Préparation technique et compétitions régionales et nationales. Lundi, mercredi, vendredi après 20h. Samedi et dimanche compétitions."
+        },
+        {
+          "@type": "Offer",
+          "name": "Aéro-boxe (+13 ans)",
+          "price": "260.00",
+          "priceCurrency": "EUR",
+          "description": "Fitness boxe en musique et sur sac. Mardi et jeudi 19h30-21h. 1er cours d'essai gratuit."
+        },
+        {
+          "@type": "Offer",
+          "name": "Formule Aéro-boxe + Loisir (+13 ans)",
+          "price": "360.00",
+          "priceCurrency": "EUR",
+          "description": "Accès illimité aux séances d'aéroboxe et de boxe loisir toute la saison."
+        }
+      ]
+    },
+    "sameAs": [
+      "https://www.facebook.com/UST-BOXE-524842731004325/"
+    ]
   }
   </script>
 </head>
@@ -104,8 +173,8 @@
 
       <div class="container">
         <div class="hero-content">
-          <div class="hero-badge" aria-label="Saison 2026-2027 · Cours d'essai gratuit">
-            SAISON 2026·2027 — COURS D'ESSAI GRATUIT
+          <div class="hero-badge" aria-label="Saison 2026-2027 · 1er cours d'essai gratuit">
+            SAISON 2026·2027 — 1ER COURS D'ESSAI GRATUIT
           </div>
           <h1 class="hero-title" id="hero-title">
             <span class="line" id="hl1">FORGE</span>
@@ -118,7 +187,7 @@
           <div class="hero-ctas">
             <a href="./pages/contact.html#essai" class="btn btn-rouge" id="hero-cta-essai">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-              Cours d'essai gratuit
+              1er cours d'essai gratuit
             </a>
             <a href="./pages/planning-tarifs.html" class="btn btn-outline" id="hero-cta-horaires">
               Voir les horaires
@@ -137,18 +206,18 @@
     <!-- ══════════════════ MARQUEE ══════════════════ -->
     <div class="marquee-wrapper" aria-hidden="true" role="marquee">
       <div class="marquee-track">
+        <span class="marquee-item">1ER COURS D'ESSAI GRATUIT</span>
         <span class="marquee-item">UNE BOXE POUR TOUS</span>
         <span class="marquee-item">UNE PLACE POUR CHACUN</span>
         <span class="marquee-item">UST BOXE TALENCE</span>
         <span class="marquee-item">3 TITRES RÉGIONAUX</span>
         <span class="marquee-item">5 DISCIPLINES</span>
-        <span class="marquee-item">COURS D'ESSAI GRATUIT</span>
+        <span class="marquee-item">1ER COURS D'ESSAI GRATUIT</span>
         <span class="marquee-item">UNE BOXE POUR TOUS</span>
         <span class="marquee-item">UNE PLACE POUR CHACUN</span>
         <span class="marquee-item">UST BOXE TALENCE</span>
         <span class="marquee-item">3 TITRES RÉGIONAUX</span>
         <span class="marquee-item">5 DISCIPLINES</span>
-        <span class="marquee-item">COURS D'ESSAI GRATUIT</span>
       </div>
     </div>
 
@@ -338,7 +407,7 @@
             <div style="position:absolute; bottom:0; left:0; right:0; padding:24px; background:linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);">
               <p style="font-size:0.75rem; font-family:var(--font-sub); letter-spacing:0.2em; color:var(--rouge); font-weight:700; margin-bottom:6px; text-transform:uppercase;">Saison 2026/2027</p>
               <p style="font-family:var(--font-title); font-size:1.4rem; line-height:1; margin-bottom:4px;">Nouvelle saison, nouveaux défis</p>
-              <p style="font-size:0.85rem; color:rgba(245,245,245,0.7);">Cours à partir du 31 août. Cours d'essai gratuit pour tous !</p>
+              <p style="font-size:0.85rem; color:rgba(245,245,245,0.7);">Reprise dès le 9 & 10 septembre. 1er cours d'essai gratuit pour tous !</p>
             </div>
           </div>
         </div>
@@ -360,48 +429,51 @@
             <p class="pricing-tag">Jeunes</p>
             <h3 class="pricing-title">Boxe éducative</h3>
             <p class="pricing-age">De 6 à 13 ans</p>
-            <div class="pricing-price"><sup>€</sup>120</div>
+            <div class="pricing-price"><sup>€</sup>160</div>
             <p class="pricing-period">par saison</p>
             <ul class="pricing-features">
-              <li>Cours le mercredi 16h–17h30</li>
+              <li>Mercredi 16h00–17h30</li>
+              <li>Reprise le 10 septembre</li>
               <li>Encadrement diplômé FFBoxe</li>
-              <li>Apprentissage ludique & motricité</li>
-              <li>Confiance en soi & respect</li>
+              <li>Initiation ludique & motricité</li>
+              <li>1er cours d'essai gratuit</li>
             </ul>
-            <a href="./pages/contact.html#essai" class="btn btn-outline" style="width:100%; justify-content:center;" id="price-edu-btn">S'inscrire</a>
+            <a href="./pages/contact.html#essai" class="btn btn-outline" style="width:100%; justify-content:center;" id="price-edu-btn">1er essai gratuit</a>
           </div>
           <div class="pricing-card featured">
             <p class="pricing-tag">⭐ Le plus populaire</p>
             <h3 class="pricing-title">Loisir / Amateur</h3>
-            <p class="pricing-age">À partir de 13 ans</p>
-            <div class="pricing-price"><sup>€</sup>250</div>
+            <p class="pricing-age">+13 ans (filles & garçons)</p>
+            <div class="pricing-price"><sup>€</sup>260</div>
             <p class="pricing-period">par saison</p>
             <ul class="pricing-features">
-              <li>Lundi, mercredi, vendredi 19h–21h</li>
-              <li>Boxe amateur, loisir, féminine, pro</li>
-              <li>Tous niveaux bienvenus</li>
-              <li>Entraîneurs diplômés</li>
+              <li>Lun, Mer, Ven 18h–20h (Loisir)</li>
+              <li>Lun, Mer, Ven après 20h (Amateurs)</li>
+              <li>Samedi / Dimanche compétitions</li>
+              <li>Entraîneurs diplômés FFBoxe</li>
+              <li>1er cours d'essai gratuit</li>
             </ul>
-            <a href="./pages/contact.html#essai" class="btn btn-rouge" style="width:100%; justify-content:center;" id="price-loisir-btn">S'inscrire</a>
+            <a href="./pages/contact.html#essai" class="btn btn-rouge" style="width:100%; justify-content:center;" id="price-loisir-btn">1er essai gratuit</a>
           </div>
           <div class="pricing-card">
             <p class="pricing-tag">Formule complète</p>
             <h3 class="pricing-title">Aéroboxe + Loisir</h3>
-            <p class="pricing-age">À partir de 13 ans</p>
-            <div class="pricing-price"><sup>€</sup>350</div>
+            <p class="pricing-age">+13 ans (filles & garçons)</p>
+            <div class="pricing-price"><sup>€</sup>360</div>
             <p class="pricing-period">par saison</p>
             <ul class="pricing-features">
-              <li>Accès à toutes les séances</li>
-              <li>Aéroboxe mardi & jeudi 19h30–21h</li>
-              <li>Boxe lun, mer, ven 19h–21h</li>
-              <li>Formule la plus complète</li>
+              <li>Accès complet : 5 séances / sem.</li>
+              <li>Aéroboxe mar & jeu 19h30–21h</li>
+              <li>Boxe Loisir lun, mer, ven 18h–20h</li>
+              <li>(Aéroboxe seule : 260€/an)</li>
+              <li>1er cours d'essai gratuit</li>
             </ul>
-            <a href="./pages/contact.html#essai" class="btn btn-outline" style="width:100%; justify-content:center;" id="price-complet-btn">S'inscrire</a>
+            <a href="./pages/contact.html#essai" class="btn btn-outline" style="width:100%; justify-content:center;" id="price-complet-btn">1er essai gratuit</a>
           </div>
         </div>
         <p style="text-align:center; margin-top:24px; font-size:0.85rem; color:var(--gris);">
-          Licence FFBoxe obligatoire. Chèque + certificat médical + photo d'identité.
-          <a href="./pages/planning-tarifs.html" style="color:var(--rouge);">Voir tous les détails →</a>
+          1er cours d'essai gratuit (certificat médical FFB obligatoire). Règlement chèque ou virement.
+          <a href="./pages/planning-tarifs.html" style="color:var(--rouge); margin-left:6px;">Voir planning & tarifs complets →</a>
         </p>
       </div>
     </section>
@@ -411,7 +483,7 @@
       <img src="./assets/img/equipe.jpg" alt="Équipe UST BOXE Talence" width="1400" height="600" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.2;" />
       <div class="cta-banner-content container">
         <div class="section-label" style="justify-content:center; margin-bottom:8px;" aria-hidden="true">Rejoins-nous</div>
-        <h2 class="glitch" data-text="">TON PREMIER<br><span class="grad-text">COURS EST OFFERT</span></h2>
+        <h2 class="glitch" data-text="">1ER COURS D'ESSAI<br><span class="grad-text">EST OFFERT</span></h2>
         <p>Peu importe ton niveau, ton âge, ton objectif — il y a une place pour toi à l'UST BOXE. Réserve ton cours d'essai gratuit dès maintenant.</p>
         <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
           <a href="./pages/contact.html#essai" class="btn btn-rouge" id="cta-final-btn">

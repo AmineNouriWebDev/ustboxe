@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Horaires & Tarifs — UST BOXE Talence | Planning hebdomadaire</title>
-  <meta name="description" content="Planning des cours d'UST BOXE Talence : boxe éducative le mercredi, boxe amateur lundi/mercredi/vendredi, aéroboxe mardi/jeudi. Tarifs saison 2026/2027 à partir de 120€." />
+  <title>Horaires & Tarifs — UST BOXE Talence | Planning & Cotisations 2026-2027</title>
+  <meta name="description" content="Planning et tarifs saison 2026/2027 d'UST BOXE Talence : boxe éducative le mercredi (160€), boxe loisir & amateur lundi/mercredi/vendredi (260€), aéroboxe (260€). 1er cours d'essai gratuit !" />
   <link rel="canonical" href="https://ustboxe.com/pages/planning-tarifs.html" />
 
   <!-- Google Search Console -->
@@ -17,12 +17,98 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   </script>
-  <meta property="og:title" content="Horaires & Tarifs — UST BOXE Talence" />
-  <meta property="og:image" content="../assets/img/disciplines-horaires.jpg" />
+
+  <!-- PWA & Mobile Icons -->
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <meta name="theme-color" content="#e10600" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="UST BOXE" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Horaires & Tarifs — UST BOXE Talence | Saison 2026-2027" />
+  <meta property="og:description" content="Consultez le planning hebdomadaire et les tarifs 2026-2027 d'UST BOXE. 1er cours d'essai gratuit pour tous !" />
+  <meta property="og:url" content="https://ustboxe.com/pages/planning-tarifs.html" />
+  <meta property="og:image" content="../assets/img/disciplines-horaires.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsClub",
+    "name": "UST BOXE",
+    "alternateName": "Union Sportive Talençaise Boxe",
+    "description": "Planning hebdomadaire et tarifs de la saison 2026-2027 à l'UST BOXE Talence. Affilié FFBoxe.",
+    "url": "https://ustboxe.com/pages/planning-tarifs.html",
+    "telephone": "+33618410680",
+    "email": "a.nouiri@live.fr",
+    "priceRange": "160€ - 360€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Chèque, Virement bancaire, Espèces",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rue Salvador Allende",
+      "addressLocality": "Talence",
+      "postalCode": "33400",
+      "addressRegion": "Nouvelle-Aquitaine",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.789011,
+      "longitude": -0.5887291
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tarifs Cotisations UST BOXE 2026-2027",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Boxe Éducative (6-13 ans)",
+          "price": "160.00",
+          "priceCurrency": "EUR",
+          "description": "Mercredi 16h00–17h30. 1er cours d'essai gratuit."
+        },
+        {
+          "@type": "Offer",
+          "name": "Boxe Loisir (+13 ans)",
+          "price": "260.00",
+          "priceCurrency": "EUR",
+          "description": "Lundi, Mercredi, Vendredi 18h00–20h00. 1er cours d'essai gratuit."
+        },
+        {
+          "@type": "Offer",
+          "name": "Boxe Amateur (+13 ans)",
+          "price": "260.00",
+          "priceCurrency": "EUR",
+          "description": "Lundi, Mercredi, Vendredi dès 20h00, Samedi/Dimanche compétitions."
+        },
+        {
+          "@type": "Offer",
+          "name": "Aéro-boxe (+13 ans)",
+          "price": "260.00",
+          "priceCurrency": "EUR",
+          "description": "Mardi et Jeudi 19h30–21h00. 1er cours d'essai gratuit."
+        },
+        {
+          "@type": "Offer",
+          "name": "Aéro-boxe + Loisir (+13 ans)",
+          "price": "360.00",
+          "priceCurrency": "EUR",
+          "description": "Formule complète : accès illimité à tous les cours de la semaine."
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <div id="header-placeholder"></div>
@@ -35,9 +121,27 @@
       <div class="page-hero-content container">
         <div class="section-label" style="justify-content:center;">Saison 2026/2027</div>
         <h1>Horaires <span class="grad-text">&amp; Tarifs</span></h1>
-        <p style="color:rgba(245,245,245,0.7); font-size:clamp(1rem,1.8vw,1.3rem); max-width:550px; margin:16px auto 0; font-family:var(--font-sub);">
-          Des cours pour tous les niveaux, du lundi au vendredi — Saison débutant le 31 août 2026
+        <p style="color:rgba(245,245,245,0.7); font-size:clamp(1rem,1.8vw,1.3rem); max-width:600px; margin:16px auto 0; font-family:var(--font-sub);">
+          Des cours pour tous les niveaux, du lundi au vendredi — Salle Pierre de Coubertin à Talence
         </p>
+      </div>
+    </section>
+
+    <!-- ══ BANDEAU PROMO ══ -->
+    <section class="container" style="margin-top:-30px; position:relative; z-index:10;" aria-label="Offre découverte">
+      <div style="background: linear-gradient(135deg, rgba(225,6,0,0.18) 0%, rgba(18,18,22,0.95) 100%); border: 1px solid var(--rouge); padding: 24px 32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <div>
+          <span style="display:inline-block; font-size:0.75rem; font-family:var(--font-sub); font-weight:800; letter-spacing:0.15em; color:var(--rouge); text-transform:uppercase; margin-bottom:4px;">Offre Rentrée 2026-2027</span>
+          <h2 style="font-family:var(--font-title); font-size:clamp(1.8rem,4vw,2.4rem); color:var(--blanc); margin-bottom:4px; line-height:1.1;">
+            1er COURS D'ESSAI GRATUIT
+          </h2>
+          <p style="color:var(--gris); font-size:0.95rem; margin:0;">
+            Venez tester la boxe anglaise, la boxe éducative ou l'aéroboxe dans une ambiance conviviale.
+          </p>
+        </div>
+        <a href="./contact.html#essai" class="btn btn-rouge" id="banner-essai-btn" style="padding:14px 28px;">
+          Réserver mon cours d'essai gratuit →
+        </a>
       </div>
     </section>
 
@@ -45,7 +149,34 @@
     <section class="section-pad bg-anthracite" id="planning" aria-label="Planning hebdomadaire">
       <div class="container">
         <div class="section-label">Planning</div>
-        <h2 data-aos="fade-up" style="margin-bottom:40px;">Nos <span class="grad-text">horaires</span></h2>
+        <h2 data-aos="fade-up" style="margin-bottom:30px;">Nos <span class="grad-text">horaires</span></h2>
+
+        <!-- REPRISE DES ENTRAÎNEMENTS -->
+        <div style="margin-bottom:40px;" data-aos="fade-up">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+            <span style="font-size:1.4rem;">🥊</span>
+            <h3 style="font-family:var(--font-title); font-size:1.5rem; color:var(--blanc); letter-spacing:0.04em;">
+              Reprise des entraînements — Saison 2026/2027
+            </h3>
+          </div>
+          <div class="reprise-grid">
+            <div class="reprise-item">
+              <h4>Boxe Éducative (6–13 ans)</h4>
+              <div class="reprise-date">10 Septembre</div>
+              <p>De 16h00 à 17h30 — Salle Pierre de Coubertin.</p>
+            </div>
+            <div class="reprise-item">
+              <h4>Aéro-Boxe (+13 ans)</h4>
+              <div class="reprise-date">9 Septembre</div>
+              <p>De 19h30 à 21h00 — Salle Pierre de Coubertin.</p>
+            </div>
+            <div class="reprise-item">
+              <h4>Boxe Loisir & Amateur</h4>
+              <div class="reprise-date">Début Septembre</div>
+              <p>Lundi, mercredi, vendredi : 18h–20h (Loisir) & après 20h (Amateurs).</p>
+            </div>
+          </div>
+        </div>
 
         <!-- TABLE (desktop) -->
         <div style="overflow-x:auto;" data-aos="fade-up" data-aos-delay="100">
@@ -60,47 +191,85 @@
               </tr>
             </thead>
             <tbody>
+              <!-- Lundi -->
               <tr>
-                <td><strong style="color:var(--blanc);">Lundi</strong></td>
-                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">19h00 – 21h00</span></td>
-                <td><span class="planning-badge badge-rouge">Boxe Amateur / Loisir / Pro / Féminine</span></td>
-                <td style="color:var(--gris);">À partir de 13 ans</td>
+                <td rowspan="2"><strong style="color:var(--blanc);">Lundi</strong></td>
+                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">18h00 – 20h00</span></td>
+                <td><span class="planning-badge badge-rouge">Boxe Loisir</span></td>
+                <td style="color:var(--gris);">+13 ans (filles & garçons)</td>
                 <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
               </tr>
+              <tr>
+                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">Après 20h00</span></td>
+                <td><span class="planning-badge badge-rouge">Boxe Amateurs / Pro</span></td>
+                <td style="color:var(--gris);">Compétiteurs & confirmés</td>
+                <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
+              </tr>
+              <!-- Mardi -->
               <tr>
                 <td><strong style="color:var(--blanc);">Mardi</strong></td>
                 <td><span style="color:var(--bleu); font-family:var(--font-sub); font-weight:700;">19h30 – 21h00</span></td>
-                <td><span class="planning-badge badge-bleu">Aéroboxe / Fitness Boxe</span></td>
-                <td style="color:var(--gris);">À partir de 13 ans</td>
+                <td><span class="planning-badge badge-bleu">Aéro-boxe / Fitness</span></td>
+                <td style="color:var(--gris);">+13 ans (tous niveaux)</td>
                 <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
               </tr>
+              <!-- Mercredi -->
               <tr>
-                <td><strong style="color:var(--blanc);">Mercredi</strong></td>
-                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">16h00 – 17h30</span></td>
+                <td rowspan="3"><strong style="color:var(--blanc);">Mercredi</strong></td>
+                <td><span style="color:#a78bfa; font-family:var(--font-sub); font-weight:700;">16h00 – 17h30</span></td>
                 <td><span class="planning-badge badge-violet">Boxe Éducative</span></td>
                 <td style="color:var(--gris);">6 à 13 ans</td>
                 <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
               </tr>
               <tr>
-                <td></td>
-                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">19h00 – 21h00</span></td>
-                <td><span class="planning-badge badge-rouge">Boxe Amateur / Loisir / Pro / Féminine</span></td>
-                <td style="color:var(--gris);">À partir de 13 ans</td>
+                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">18h00 – 20h00</span></td>
+                <td><span class="planning-badge badge-rouge">Boxe Loisir</span></td>
+                <td style="color:var(--gris);">+13 ans (filles & garçons)</td>
                 <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
               </tr>
+              <tr>
+                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">Après 20h00</span></td>
+                <td><span class="planning-badge badge-rouge">Boxe Amateurs / Pro</span></td>
+                <td style="color:var(--gris);">Compétiteurs & confirmés</td>
+                <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
+              </tr>
+              <!-- Jeudi -->
               <tr>
                 <td><strong style="color:var(--blanc);">Jeudi</strong></td>
                 <td><span style="color:var(--bleu); font-family:var(--font-sub); font-weight:700;">19h30 – 21h00</span></td>
-                <td><span class="planning-badge badge-bleu">Aéroboxe / Fitness Boxe</span></td>
-                <td style="color:var(--gris);">À partir de 13 ans</td>
+                <td><span class="planning-badge badge-bleu">Aéro-boxe / Fitness</span></td>
+                <td style="color:var(--gris);">+13 ans (tous niveaux)</td>
+                <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
+              </tr>
+              <!-- Vendredi -->
+              <tr>
+                <td rowspan="2"><strong style="color:var(--blanc);">Vendredi</strong></td>
+                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">18h00 – 20h00</span></td>
+                <td><span class="planning-badge badge-rouge">Boxe Loisir</span></td>
+                <td style="color:var(--gris);">+13 ans (filles & garçons)</td>
                 <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
               </tr>
               <tr>
-                <td><strong style="color:var(--blanc);">Vendredi</strong></td>
-                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">19h00 – 21h00</span></td>
-                <td><span class="planning-badge badge-rouge">Boxe Amateur / Loisir / Pro / Féminine</span></td>
-                <td style="color:var(--gris);">À partir de 13 ans</td>
+                <td><span style="color:var(--rouge); font-family:var(--font-sub); font-weight:700;">Après 20h00</span></td>
+                <td><span class="planning-badge badge-rouge">Boxe Amateurs / Pro</span></td>
+                <td style="color:var(--gris);">Compétiteurs & confirmés</td>
                 <td style="color:var(--gris); font-size:0.85rem;">Salle P. de Coubertin</td>
+              </tr>
+              <!-- Samedi / Dimanche -->
+              <tr>
+                <td><strong style="color:var(--blanc);">Samedi / Dimanche</strong></td>
+                <td><span style="color:var(--or, #ffd700); font-family:var(--font-sub); font-weight:700;">Selon calendrier</span></td>
+                <td><span class="planning-badge badge-rouge">Compétitions officielles</span></td>
+                <td style="color:var(--gris);">Boxeurs engagés</td>
+                <td style="color:var(--gris); font-size:0.85rem;">Région & France</td>
+              </tr>
+              <!-- Cours particuliers -->
+              <tr>
+                <td><strong style="color:var(--blanc);">Cours individuels</strong></td>
+                <td><span style="color:var(--blanc); font-family:var(--font-sub); font-weight:700;">Tous les jours</span></td>
+                <td><span class="planning-badge badge-gris">Coaching particulier</span></td>
+                <td style="color:var(--gris);">Tous publics</td>
+                <td style="color:var(--gris); font-size:0.85rem;">À valider avec l'entraîneur</td>
               </tr>
             </tbody>
           </table>
@@ -110,13 +279,18 @@
         <div class="planning-list" aria-label="Planning hebdomadaire UST BOXE">
           <div class="planning-list-item" style="border-left-color: var(--rouge);">
             <div class="planning-list-day">Lundi</div>
-            <div class="planning-list-time">19h00 – 21h00</div>
-            <div class="planning-list-name">Boxe Amateur / Loisir / Féminine</div>
+            <div class="planning-list-time">18h00 – 20h00</div>
+            <div class="planning-list-name">Boxe Loisir (+13 ans)</div>
+          </div>
+          <div class="planning-list-item" style="border-left-color: var(--rouge);">
+            <div class="planning-list-day">Lundi</div>
+            <div class="planning-list-time">Après 20h00</div>
+            <div class="planning-list-name">Boxe Amateurs / Pro</div>
           </div>
           <div class="planning-list-item" style="border-left-color: var(--bleu);">
             <div class="planning-list-day">Mardi</div>
             <div class="planning-list-time">19h30 – 21h00</div>
-            <div class="planning-list-name">Aéroboxe / Fitness Boxe</div>
+            <div class="planning-list-name">Aéro-boxe / Fitness (+13 ans)</div>
           </div>
           <div class="planning-list-item" style="border-left-color: #6414c8;">
             <div class="planning-list-day">Mercredi</div>
@@ -125,18 +299,38 @@
           </div>
           <div class="planning-list-item" style="border-left-color: var(--rouge);">
             <div class="planning-list-day">Mercredi</div>
-            <div class="planning-list-time">19h00 – 21h00</div>
-            <div class="planning-list-name">Boxe Amateur / Loisir / Féminine</div>
+            <div class="planning-list-time">18h00 – 20h00</div>
+            <div class="planning-list-name">Boxe Loisir (+13 ans)</div>
+          </div>
+          <div class="planning-list-item" style="border-left-color: var(--rouge);">
+            <div class="planning-list-day">Mercredi</div>
+            <div class="planning-list-time">Après 20h00</div>
+            <div class="planning-list-name">Boxe Amateurs / Pro</div>
           </div>
           <div class="planning-list-item" style="border-left-color: var(--bleu);">
             <div class="planning-list-day">Jeudi</div>
             <div class="planning-list-time">19h30 – 21h00</div>
-            <div class="planning-list-name">Aéroboxe / Fitness Boxe</div>
+            <div class="planning-list-name">Aéro-boxe / Fitness (+13 ans)</div>
           </div>
           <div class="planning-list-item" style="border-left-color: var(--rouge);">
             <div class="planning-list-day">Vendredi</div>
-            <div class="planning-list-time">19h00 – 21h00</div>
-            <div class="planning-list-name">Boxe Amateur / Loisir / Féminine</div>
+            <div class="planning-list-time">18h00 – 20h00</div>
+            <div class="planning-list-name">Boxe Loisir (+13 ans)</div>
+          </div>
+          <div class="planning-list-item" style="border-left-color: var(--rouge);">
+            <div class="planning-list-day">Vendredi</div>
+            <div class="planning-list-time">Après 20h00</div>
+            <div class="planning-list-name">Boxe Amateurs / Pro</div>
+          </div>
+          <div class="planning-list-item" style="border-left-color: #ffd700;">
+            <div class="planning-list-day">Samedi / Dimanche</div>
+            <div class="planning-list-time">Compétitions</div>
+            <div class="planning-list-name">Galas et Championnats officiels</div>
+          </div>
+          <div class="planning-list-item" style="border-left-color: var(--blanc);">
+            <div class="planning-list-day">Tous les jours</div>
+            <div class="planning-list-time">Sur rendez-vous</div>
+            <div class="planning-list-name">Cours individuels (avec entraîneur)</div>
           </div>
         </div>
 
@@ -157,67 +351,164 @@
     <!-- ══ TARIFS ══ -->
     <section class="section-pad bg-noir clip-top" id="tarifs" aria-label="Tarifs de la saison">
       <div class="container">
-        <div class="section-label">Tarifs</div>
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:50px;">
+        <div class="section-label">Cotisations 2026-2027</div>
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:40px;">
           <h2 data-aos="fade-up">Nos <span class="grad-text">tarifs</span></h2>
-          <p style="color:var(--gris); max-width:400px;" data-aos="fade-up" data-aos-delay="100">Saison 2026/2027 — Inscriptions ouvertes à partir du 31 août</p>
+          <p style="color:var(--gris); max-width:400px;" data-aos="fade-up" data-aos-delay="100">
+            Saison 2026/2027 — Des tarifs transparents et accessibles pour pratiquer la boxe toute l'année.
+          </p>
         </div>
 
+        <!-- TABLEAU RÉCAPITULATIF OFFICIEL -->
+        <div style="overflow-x:auto; margin-bottom:48px;" data-aos="fade-up">
+          <table class="tarifs-recap-table" role="table" aria-label="Tableau des tarifs 2026-2027">
+            <thead>
+              <tr>
+                <th scope="col">Type de boxe</th>
+                <th scope="col">6 - 13 ans</th>
+                <th scope="col">+13 ans (filles / garçons)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Boxe Loisir</strong></td>
+                <td style="color:var(--gris); text-align:center;">—</td>
+                <td><span class="price-val">260 €</span> <span style="font-size:0.8rem; color:var(--gris);">/ an</span></td>
+              </tr>
+              <tr>
+                <td><strong>Boxe Amateur</strong></td>
+                <td style="color:var(--gris); text-align:center;">—</td>
+                <td><span class="price-val">260 €</span> <span style="font-size:0.8rem; color:var(--gris);">/ an</span></td>
+              </tr>
+              <tr>
+                <td><strong>Boxe Éducative</strong></td>
+                <td><span class="price-val" style="color:var(--rouge);">160 €</span> <span style="font-size:0.8rem; color:var(--gris);">/ an</span></td>
+                <td style="color:var(--gris); text-align:center;">—</td>
+              </tr>
+              <tr>
+                <td><strong>Aéro-boxe</strong></td>
+                <td style="color:var(--gris); text-align:center;">—</td>
+                <td><span class="price-val">260 €</span> <span style="font-size:0.8rem; color:var(--gris);">/ an</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Aéro-boxe + Loisir</strong>
+                  <span class="planning-badge badge-rouge" style="font-size:0.7rem; margin-left:8px;">Formule Combinée</span>
+                </td>
+                <td style="color:var(--gris); text-align:center;">—</td>
+                <td><span class="price-val" style="color:var(--rouge);">360 €</span> <span style="font-size:0.8rem; color:var(--gris);">/ an</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- GRILLE DE CARTES PRICING -->
         <div class="pricing-grid">
+          <!-- Card 1 : Boxe Éducative -->
           <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
-            <p class="pricing-tag">Jeunes</p>
+            <p class="pricing-tag">Enfants</p>
             <h3 class="pricing-title">Boxe Éducative</h3>
             <p class="pricing-age">De 6 à 13 ans</p>
-            <div class="pricing-price"><sup>€</sup>120</div>
+            <div class="pricing-price"><sup>€</sup>160</div>
             <p class="pricing-period">pour toute la saison</p>
             <ul class="pricing-features">
-              <li>Mercredi 16h00 – 17h30</li>
-              <li>Initiation ludique à la boxe</li>
-              <li>Motricité, coordination, respect</li>
-              <li>Entraîneurs diplômés FFBoxe</li>
-              <li>Cours d'essai gratuit</li>
+              <li>Mercredi de 16h00 à 17h30</li>
+              <li>Reprise le 10 septembre</li>
+              <li>Initiation ludique et motricité</li>
+              <li>Respect, discipline & confiance</li>
+              <li>Encadré par des éducateurs FFBoxe</li>
+              <li>1er cours d'essai gratuit</li>
             </ul>
             <a href="./contact.html#essai" class="btn btn-outline" style="width:100%; justify-content:center;" id="price-edu-page-btn">Essai gratuit</a>
           </div>
 
+          <!-- Card 2 : Loisir & Amateur -->
           <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
             <p class="pricing-tag">⭐ Le plus populaire</p>
             <h3 class="pricing-title">Loisir / Amateur</h3>
-            <p class="pricing-age">À partir de 13 ans</p>
-            <div class="pricing-price"><sup>€</sup>250</div>
+            <p class="pricing-age">+13 ans (filles & garçons)</p>
+            <div class="pricing-price"><sup>€</sup>260</div>
             <p class="pricing-period">pour toute la saison</p>
             <ul class="pricing-features">
-              <li>Lundi, Mercredi, Vendredi 19h–21h</li>
-              <li>Boxe amateur, loisir, pro, féminine</li>
-              <li>Tous niveaux bienvenus</li>
-              <li>Remise en forme & technique</li>
-              <li>Cours d'essai gratuit</li>
+              <li>Lundi, Mercredi, Vendredi</li>
+              <li>18h00–20h00 : Section Loisirs</li>
+              <li>Après 20h00 : Section Amateurs</li>
+              <li>Préparation physique & technique</li>
+              <li>Entraîneurs expérimentés (30 ans)</li>
+              <li>1er cours d'essai gratuit</li>
             </ul>
             <a href="./contact.html#essai" class="btn btn-rouge" style="width:100%; justify-content:center;" id="price-loisir-page-btn">Essai gratuit</a>
           </div>
 
+          <!-- Card 3 : Aéroboxe -->
+          <div class="pricing-card" data-aos="fade-up" data-aos-delay="150">
+            <p class="pricing-tag">Cardio & Fitness</p>
+            <h3 class="pricing-title">Aéro-Boxe</h3>
+            <p class="pricing-age">+13 ans (filles & garçons)</p>
+            <div class="pricing-price"><sup>€</sup>260</div>
+            <p class="pricing-period">pour toute la saison</p>
+            <ul class="pricing-features">
+              <li>Mardi & Jeudi 19h30–21h00</li>
+              <li>Reprise le 9 septembre</li>
+              <li>Fitness boxe sur sac & musique</li>
+              <li>Cardio intense, tonification, défoulement</li>
+              <li>Accessible sans prérequis</li>
+              <li>1er cours d'essai gratuit</li>
+            </ul>
+            <a href="./contact.html#essai" class="btn btn-outline" style="width:100%; justify-content:center;" id="price-aero-page-btn">Essai gratuit</a>
+          </div>
+
+          <!-- Card 4 : Formule Complète -->
           <div class="pricing-card" id="formule" data-aos="fade-up" data-aos-delay="200">
             <p class="pricing-tag">Formule complète</p>
             <h3 class="pricing-title">Aéroboxe + Loisir</h3>
-            <p class="pricing-age">À partir de 13 ans</p>
-            <div class="pricing-price"><sup>€</sup>350</div>
+            <p class="pricing-age">+13 ans (filles & garçons)</p>
+            <div class="pricing-price"><sup>€</sup>360</div>
             <p class="pricing-period">pour toute la saison</p>
             <ul class="pricing-features">
+              <li>Accès illimité à toutes les séances</li>
               <li>Aéroboxe : Mardi & Jeudi 19h30–21h</li>
-              <li>Boxe : Lun, Mer, Ven 19h–21h</li>
-              <li>Accès à toutes les séances</li>
-              <li>Cardio + technique + défoulement</li>
+              <li>Boxe Loisir : Lun, Mer, Ven 18h–20h</li>
+              <li>5 séances par semaine possibles</li>
+              <li>Cardio + technique + dépassement</li>
               <li>La formule la plus complète</li>
             </ul>
             <a href="./contact.html#essai" class="btn btn-outline" style="width:100%; justify-content:center;" id="price-complet-page-btn">Essai gratuit</a>
           </div>
         </div>
 
-        <!-- Info -->
-        <div style="margin-top:24px; text-align:center; padding:16px; background:rgba(225,6,0,0.06); border:1px solid rgba(225,6,0,0.2);">
-          <p style="font-size:0.9rem; color:rgba(245,245,245,0.8);">
-            <strong style="color:var(--rouge);">Cours d'essai gratuit</strong> pour toutes les disciplines — Contactez-nous pour réserver votre séance découverte.
-          </p>
+        <!-- ══ NOTES & CONDITIONS ══ -->
+        <div class="conditions-box" data-aos="fade-up">
+          <h3 style="font-family:var(--font-title); font-size:1.6rem; color:var(--blanc); margin-bottom:20px; display:flex; align-items:center; gap:10px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--rouge)" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Conditions &amp; Modalités d'inscription
+          </h3>
+          <ul class="conditions-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>1 cours d'essai autorisé</strong> (certificat médical FFB obligatoire).</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Les formalités administratives (docteur, cotisation, photos d'identité, licence) doivent être impérativement réglées <strong>dès le 2ème cours</strong>.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Règlement de la cotisation : par <strong>chèque</strong> ou <strong>virement bancaire</strong>.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Des <strong>facilités de paiement</strong> peuvent être étudiées après accord préalable avec le président du club.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Les tarifs des <strong>cours particuliers / individuels</strong> sont à valider directement avec les entraîneurs.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Le club n'est pas garant des pertes ou vols d'affaires personnelles (se référer au règlement intérieur du club).</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -235,9 +526,9 @@
               Documents requis
             </h3>
             <ul class="inscription-list">
-              <li>Règlement par chèque pour la <strong>licence FFBoxe</strong></li>
-              <li>Un <strong>certificat médical</strong> de non contre-indication à la pratique de la boxe</li>
-              <li>Une <strong>photo d'identité</strong> récente</li>
+              <li>Règlement de la cotisation (chèque ou virement) pour la <strong>licence FFBoxe</strong></li>
+              <li>Un <strong>certificat médical</strong> officiel de non contre-indication à la pratique de la boxe</li>
+              <li>Deux <strong>photos d'identité</strong> récentes</li>
             </ul>
           </div>
 
@@ -247,19 +538,19 @@
               Équipement obligatoire
             </h3>
             <ul class="inscription-list">
-              <li><strong>Tenue de sport</strong> confortable</li>
+              <li><strong>Tenue de sport</strong> adaptée</li>
               <li><strong>Gants de boxe</strong> et <strong>bandages</strong> pour les mains</li>
               <li><strong>Protège-dents</strong> homologué</li>
-              <li><strong>Tapis de yoga</strong> pour les étirements et le renforcement</li>
-              <li><strong>De quoi s'hydrater</strong> (bouteille d'eau)</li>
-              <li>Casque <em style="color:var(--gris);">(facultatif pour les loisirs et la boxe éducative)</em></li>
+              <li><strong>Tapis de sol</strong> pour le renforcement et les étirements</li>
+              <li><strong>Bouteille d'eau</strong> ou gourde</li>
+              <li>Casque <em style="color:var(--gris);">(facultatif pour le loisir et la boxe éducative)</em></li>
             </ul>
           </div>
         </div>
 
         <div style="margin-top:40px; padding:32px; background:rgba(10,60,255,0.06); border:1px solid rgba(10,60,255,0.2); text-align:center;" data-aos="fade-up" data-aos-delay="200">
           <h3 style="font-size:1.5rem; margin-bottom:12px;">Des questions sur l'inscription ?</h3>
-          <p style="color:var(--gris); margin-bottom:24px;">Notre président Mohamed Ali Nouiri est joignable de 09h à 21h du lundi au dimanche.</p>
+          <p style="color:var(--gris); margin-bottom:24px;">Notre président Mohamed Ali Nouiri est à votre écoute pour tout renseignement.</p>
           <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
             <a href="tel:+33618410680" class="btn btn-rouge" id="inscription-tel-btn">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>

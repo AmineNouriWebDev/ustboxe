@@ -45,9 +45,12 @@ function injectHeader() {
   <div id="cursor-ring" aria-hidden="true"></div>
 
   <!-- Bandeau Promo -->
-  <div class="promo-topbar" role="banner">
-    <span>🥊 <strong>1er COURS D'ESSAI GRATUIT</strong> — Saison 2026-2027 à Talence</span>
-    <a href="${ROOT}pages/contact.html#essai">Réserver mon essai →</a>
+  <div class="promo-topbar" id="promo-topbar" role="banner">
+    <div class="promo-inner">
+      <span class="promo-text">🥊 <strong>1er COURS D'ESSAI GRATUIT</strong> — Saison 2026-2027</span>
+      <a href="${ROOT}pages/contact.html#essai" class="promo-link">Réserver mon essai →</a>
+    </div>
+    <button class="promo-close" id="promo-close-btn" aria-label="Fermer le bandeau">✕</button>
   </div>
 
   <header id="site-header" role="banner">
@@ -168,7 +171,7 @@ function injectFooter() {
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-copy">© 2026-2027 <span>UST BOXE</span> — Tous droits réservés. Union Sportive Talençaise Boxe.</p>
+        <p class="footer-copy">© 2026-2027 <span>UST BOXE</span> — Tous droits réservés. Union Sportive Talençaise Boxe. Created by <a href="https://maxsolving.com" target="_blank" rel="noopener noreferrer" style="color:var(--rouge); text-decoration:none; font-weight:700;">MaxSolving</a></p>
         <p class="footer-copy">Affilié à la <span>Fédération Française de Boxe</span></p>
         <div style="width:100%; text-align:center; margin-top:10px;">
           <button class="pwa-install-btn" id="pwa-btn-footer" style="display:none;">
@@ -435,12 +438,43 @@ function initPWA() {
 }
 
 /* ══════════════════════════════════════
+   PROMO TOPBAR (Auto-hide & Close)
+══════════════════════════════════════ */
+function initPromoTopbar() {
+  const topbar = document.getElementById('promo-topbar');
+  const closeBtn = document.getElementById('promo-close-btn');
+  if (!topbar) return;
+
+  const hideTopbar = () => {
+    topbar.classList.add('hidden');
+    document.body.classList.add('topbar-hidden');
+    document.documentElement.style.setProperty('--topbar-height', '0px');
+  };
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', hideTopbar);
+  }
+
+  // Auto-hide smoothly after 5 seconds
+  const autoTimer = setTimeout(hideTopbar, 5000);
+
+  // Auto-hide on scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40 && !topbar.classList.contains('hidden')) {
+      clearTimeout(autoTimer);
+      hideTopbar();
+    }
+  }, { passive: true });
+}
+
+/* ══════════════════════════════════════
    INIT
 ══════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
   initPageLoader();
   injectHeader();
   injectFooter();
+  initPromoTopbar();
   initHeaderScroll();
   initBurger();
   initCursor();

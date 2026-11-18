@@ -20,6 +20,7 @@ const PRECACHE_ASSETS = [
   './pages/palmares.html',
   './pages/galerie.html',
   './pages/contact.html',
+  './pages/recrutement.html',
   './pages/merci.html'
 ];
 

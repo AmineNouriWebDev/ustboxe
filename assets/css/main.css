@@ -2295,4 +2295,149 @@ img:not([src]) {
   box-shadow: 0 4px 15px rgba(225, 6, 0, 0.4);
 }
 
+/* ── SPOTLIGHT RECRUTEMENT ── */
+.recrutement-spotlight-section {
+  background: var(--noir);
+  padding: 40px 0 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.recrutement-spotlight-card {
+  background: linear-gradient(135deg, rgba(225, 6, 0, 0.15) 0%, #121218 60%, rgba(10, 60, 255, 0.08) 100%);
+  border: 1px solid rgba(225, 6, 0, 0.4);
+  padding: clamp(24px, 4vw, 36px);
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+}
+
+.recrutement-spotlight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.recrutement-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  background: rgba(225, 6, 0, 0.2);
+  border: 1px solid var(--rouge);
+  color: var(--blanc);
+  font-family: var(--font-sub);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.recrutement-badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--rouge);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+.recrutement-indemnite {
+  font-family: var(--font-sub);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gris);
+  letter-spacing: 0.05em;
+}
+
+.recrutement-spotlight-body {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .recrutement-spotlight-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recrutement-spotlight-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.recrutement-spotlight-desc {
+  color: rgba(245, 245, 245, 0.85);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  max-width: 750px;
+  margin-bottom: 20px;
+}
+
+.recrutement-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.recrutement-pillar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--gris-dark);
+  color: var(--blanc);
+  font-family: var(--font-sub);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+
+.recrutement-profil-note {
+  font-size: 0.85rem;
+  color: var(--gris);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.recrutement-spotlight-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 220px;
+}
+
+@media (max-width: 900px) {
+  .recrutement-spotlight-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.nav-badge-new {
+  display: inline-block;
+  background: var(--rouge);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+
 

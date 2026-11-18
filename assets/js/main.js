@@ -19,6 +19,7 @@ function getNavLinks() {
     { href: `${ROOT}pages/disciplines.html`,  label: 'Disciplines',  id: 'disciplines.html' },
     { href: `${ROOT}pages/planning-tarifs.html`, label: 'Horaires & Tarifs', id: 'planning-tarifs.html' },
     { href: `${ROOT}pages/palmares.html`,     label: 'Palmarès',     id: 'palmares.html' },
+    { href: `${ROOT}pages/recrutement.html`,  label: 'Recrutement',  id: 'recrutement.html', isSpecial: true },
     { href: `${ROOT}pages/galerie.html`,      label: 'Galerie',      id: 'galerie.html' },
     { href: `${ROOT}pages/contact.html`,      label: 'Contact',      id: 'contact.html' },
   ];
@@ -32,23 +33,25 @@ function injectHeader() {
   const links = getNavLinks();
   const navLinks = links.map(l => {
     const isActive = CURRENT_PAGE === l.id ? 'active' : '';
-    return `<a href="${l.href}" class="nav-link ${isActive}" aria-label="${l.label}">${l.label}</a>`;
+    const badge = l.isSpecial ? '<span class="nav-badge-new">Offre</span>' : '';
+    return `<a href="${l.href}" class="nav-link ${isActive}" aria-label="${l.label}">${l.label}${badge}</a>`;
   }).join('');
 
-  const mobileLinks = links.map(l =>
-    `<a href="${l.href}" class="mobile-nav-link">${l.label}</a>`
-  ).join('');
+  const mobileLinks = links.map(l => {
+    const badge = l.isSpecial ? '<span class="nav-badge-new">Offre</span>' : '';
+    return `<a href="${l.href}" class="mobile-nav-link">${l.label}${badge}</a>`;
+  }).join('');
 
   placeholder.outerHTML = `
   <div id="scroll-progress" aria-hidden="true"></div>
   <div id="cursor-dot" aria-hidden="true"></div>
   <div id="cursor-ring" aria-hidden="true"></div>
 
-  <!-- Bandeau Promo -->
+  <!-- Bandeau Promo / Flash Recrutement -->
   <div class="promo-topbar" id="promo-topbar" role="banner">
     <div class="promo-inner">
-      <span class="promo-text">🥊 <strong>1er COURS D'ESSAI GRATUIT</strong> — Saison 2026-2027</span>
-      <a href="${ROOT}pages/contact.html#essai" class="promo-link">Réserver mon essai →</a>
+      <span class="promo-text">📢 <strong>L'UST TALENCE BOXE RECRUTE !</strong> — Volontaire en Service Civique (24h/sem)</span>
+      <a href="${ROOT}pages/recrutement.html" class="promo-link">Voir l'offre &amp; Postuler →</a>
     </div>
     <button class="promo-close" id="promo-close-btn" aria-label="Fermer le bandeau">✕</button>
   </div>
@@ -137,6 +140,7 @@ function injectFooter() {
             <li><a href="${ROOT}pages/palmares.html">Palmarès</a></li>
             <li><a href="${ROOT}pages/galerie.html">Galerie</a></li>
             <li><a href="${ROOT}pages/contact.html">Contact</a></li>
+            <li><a href="${ROOT}pages/recrutement.html" style="color:var(--rouge); font-weight:700;">Offre Service Civique</a></li>
           </ul>
         </div>
 

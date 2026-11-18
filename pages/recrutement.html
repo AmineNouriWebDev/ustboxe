@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offre de Service Civique — L'UST Talence Boxe Recrute ! (Gironde)</title>
+  <meta name="description" content="L'UST Talence Boxe recrute un(e) volontaire en Service Civique (24h/semaine) pour accompagner le développement associatif, la communication et l'événementiel du club à Talence." />
+  <link rel="canonical" href="https://ustboxe.com/pages/recrutement.html" />
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="emSCaizssuMlRhG8mFCq4hfzoEimE7E72ita9gjWyFc" />
+
+  <!-- Google Analytics (Google Tag Manager) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-T3TFX2TP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+
+  <!-- PWA & Mobile Icons -->
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <meta name="theme-color" content="#e10600" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="UST BOXE" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Offre de Service Civique — L'UST Talence Boxe Recrute !" />
+  <meta property="og:description" content="Rejoignez l'équipe de l'UST BOXE en Service Civique : communication, partenariats, événementiel et vie associative à Talence." />
+  <meta property="og:url" content="https://ustboxe.com/pages/recrutement.html" />
+  <meta property="og:image" content="../assets/img/equipe.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <style>
+    .job-overview-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: -40px auto 40px;
+      position: relative;
+      z-index: 10;
+    }
+    .job-overview-card {
+      background: var(--anthracite);
+      border: 1px solid var(--gris-dark);
+      border-top: 3px solid var(--rouge);
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .job-overview-label {
+      font-family: var(--font-sub);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--gris);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .job-overview-value {
+      font-family: var(--font-title);
+      font-size: 1.4rem;
+      color: var(--blanc);
+      line-height: 1.2;
+    }
+    .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin: 32px 0 50px;
+    }
+    .mission-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--gris-dark);
+      padding: 32px 28px;
+      position: relative;
+      transition: all 0.3s var(--ease-out);
+    }
+    .mission-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--rouge);
+      background: rgba(225, 6, 0, 0.03);
+    }
+    .mission-card-num {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-family: var(--font-title);
+      font-size: 2.2rem;
+      color: rgba(255, 255, 255, 0.08);
+      line-height: 1;
+    }
+    .mission-card-title {
+      font-family: var(--font-title);
+      font-size: 1.5rem;
+      color: var(--blanc);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .mission-card-title .icon {
+      color: var(--rouge);
+      font-size: 1.5rem;
+    }
+    .mission-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .mission-card ul li {
+      font-size: 0.92rem;
+      color: rgba(245, 245, 245, 0.85);
+      line-height: 1.6;
+      display: flex;
+      gap: 10px;
+    }
+    .mission-card ul li::before {
+      content: '→';
+      color: var(--rouge);
+      font-weight: 700;
+    }
+    .formation-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 16px 0 24px;
+    }
+    .formation-badge {
+      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--gris-dark);
+      color: var(--blanc);
+      font-family: var(--font-sub);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 2px;
+    }
+    .apply-card {
+      background: linear-gradient(135deg, rgba(225,6,0,0.15) 0%, rgba(10,10,15,0.95) 100%);
+      border: 1px solid var(--rouge);
+      padding: 40px 32px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+
+  <!-- Schema.org JobPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Volontaire en Service Civique — Communication, Partenariats & Événementiel",
+    "description": "L'Union Sportive Talence Boxe recherche un(e) jeune volontaire dynamique pour accompagner le développement de ses activités sportives, associatives et événementielles à Talence.",
+    "datePosted": "2026-11-18",
+    "validThrough": "2027-03-31",
+    "employmentType": "VOLUNTEER",
+    "hiringOrganization": {
+      "@type": "SportsClub",
+      "name": "UST BOXE",
+      "sameAs": "https://ustboxe.com",
+      "logo": "https://ustboxe.com/assets/img/icon-512.png"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue Salvador Allende (Salle Pierre de Coubertin)",
+        "addressLocality": "Talence",
+        "postalCode": "33400",
+        "addressRegion": "Gironde",
+        "addressCountry": "FR"
+      }
+    },
+    "baseSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "EUR",
+      "value": {
+        "@type": "QuantitativeValue",
+        "value": 620.00,
+        "unitText": "MONTH"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ══ PAGE HERO ══ -->
+    <section class="page-hero" aria-label="Offre de Service Civique">
+      <img src="../assets/img/equipe.jpg" alt="Équipe UST Boxe Talence" class="page-hero-img" width="1400" height="500" loading="eager" />
+      <div class="page-hero-content container">
+        <div class="section-label" style="justify-content:center;">
+          <span style="color:var(--rouge); font-weight:800;">OFFRE SERVICE CIVIQUE</span> · 24H / SEMAINE
+        </div>
+        <h1>L'UST BOXE <span class="grad-text">RECRUTE !</span></h1>
+        <p style="color:rgba(245,245,245,0.85); font-size:clamp(1rem,1.8vw,1.3rem); max-width:650px; margin:16px auto 0; font-family:var(--font-sub);">
+          Un(e) volontaire pour accompagner le développement de son association sportive et citoyenne à Talence.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══ CARTOUCHES SYNTHÈSE ══ -->
+    <section class="container" aria-label="Informations clés de l'offre">
+      <div class="job-overview-bar">
+        <div class="job-overview-card" data-aos="fade-up" data-aos-delay="0">
+          <span class="job-overview-label">Type de contrat</span>
+          <span class="job-overview-value">Service Civique</span>
+          <span style="font-size:0.8rem; color:var(--gris);">Accessible aux 16–25 ans (jusqu'à 30 ans handicap)</span>
+        </div>
+        <div class="job-overview-card" data-aos="fade-up" data-aos-delay="50">
+          <span class="job-overview-label">Temps de travail</span>
+          <span class="job-overview-value">24h / semaine</span>
+          <span style="font-size:0.8rem; color:var(--gris);">Horaires flexibles & tutorat personnalisé</span>
+        </div>
+        <div class="job-overview-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="job-overview-label">Lieu de la mission</span>
+          <span class="job-overview-value">Talence (33400)</span>
+          <span style="font-size:0.8rem; color:var(--gris);">Salle P. de Coubertin – Quartier Thouars</span>
+        </div>
+        <div class="job-overview-card" data-aos="fade-up" data-aos-delay="150">
+          <span class="job-overview-label">Indemnité légale État</span>
+          <span class="job-overview-value" style="color:var(--rouge);">~620 € / mois</span>
+          <span style="font-size:0.8rem; color:var(--gris);">Versée par l'Agence du Service Civique</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PRÉSENTATION & MISSIONS ══ -->
+    <section class="section-pad bg-anthracite clip-top" id="missions" aria-label="Missions de la mission">
+      <div class="container">
+        <div class="section-label">Fiche de poste</div>
+        <h2 data-aos="fade-up">Missions <span class="grad-text">principales</span></h2>
+        <p style="color:var(--gris); max-width:680px; margin-top:12px; font-size:1.05rem;" data-aos="fade-up" data-aos-delay="50">
+          L'Union Sportive Talence Boxe recherche un(e) jeune volontaire dynamique, motivé(e) et force de proposition pour rejoindre son équipe et participer au développement de ses activités sportives, associatives et événementielles.
+        </p>
+
+        <div class="mission-grid">
+          <!-- Mission 1 -->
+          <article class="mission-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="mission-card-num">01</span>
+            <h3 class="mission-card-title">
+              <span class="icon">📱</span>
+              Communication & Digital
+            </h3>
+            <ul>
+              <li>Participer à la communication du club sur les <strong>réseaux sociaux</strong> (Instagram, Facebook).</li>
+              <li>Contribuer à la <strong>création de supports visuels</strong> : affiches, publications, flyers événementiels.</li>
+              <li>Participer à la <strong>valorisation du site Internet</strong> et des activités du club.</li>
+              <li>Promouvoir les <strong>événements, cours et actions</strong> de l'association.</li>
+            </ul>
+          </article>
+
+          <!-- Mission 2 -->
+          <article class="mission-card" data-aos="fade-up" data-aos-delay="150">
+            <span class="mission-card-num">02</span>
+            <h3 class="mission-card-title">
+              <span class="icon">🤝</span>
+              Partenariats & Réseau
+            </h3>
+            <ul>
+              <li>Participer à l'<strong>identification de nouveaux partenaires</strong> et sponsors locaux.</li>
+              <li>Contribuer à la <strong>prise de contact</strong> avec les entreprises et commerçants de Talence et métropole bordelaise.</li>
+              <li>Participer au <strong>suivi des relations</strong> avec les partenaires existants.</li>
+              <li>Aider à valoriser les actions du club auprès des <strong>institutions et acteurs locaux</strong>.</li>
+            </ul>
+          </article>
+
+          <!-- Mission 3 -->
+          <article class="mission-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="mission-card-num">03</span>
+            <h3 class="mission-card-title">
+              <span class="icon">🥊</span>
+              Organisation & Événementiel
+            </h3>
+            <ul>
+              <li>Participer à l'organisation des <strong>galas, compétitions et manifestations</strong> sportives.</li>
+              <li>Contribuer à la préparation des <strong>journées portes ouvertes</strong> et initiations.</li>
+              <li>Participer à la mise en place d'actions de <strong>découverte de la boxe</strong> pour tous publics.</li>
+              <li>Être <strong>force de proposition</strong> pour impulser et développer de nouveaux projets.</li>
+            </ul>
+          </article>
+
+          <!-- Mission 4 -->
+          <article class="mission-card" data-aos="fade-up" data-aos-delay="250">
+            <span class="mission-card-num">04</span>
+            <h3 class="mission-card-title">
+              <span class="icon">👥</span>
+              Vie Associative & Quartier
+            </h3>
+            <ul>
+              <li>Participer aux actions en faveur des <strong>jeunes et des habitants du quartier Thouars</strong>.</li>
+              <li>Contribuer au développement de la <strong>boxe éducative</strong> et de l'<strong>aéroboxe</strong>.</li>
+              <li>Participer à la <strong>dynamique collective</strong> avec les bénévoles et l'équipe d'encadrement.</li>
+              <li>Créer du lien social, encourager le respect, la discipline et la mixité par le sport.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PROFIL & CONDITIONS ══ -->
+    <section class="section-pad bg-noir clip-top" id="profil" aria-label="Profil recherché">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:40px; align-items:start;">
+
+          <!-- Profil -->
+          <div data-aos="fade-right">
+            <div class="section-label">Candidats ciblés</div>
+            <h2>Profil <span class="grad-text">recherché</span></h2>
+            <p style="color:var(--gris); margin:16px 0; line-height:1.7;">
+              Nous privilégions les candidats ayant un intérêt ou suivant une formation dans les domaines du commerce, de la communication, du marketing ou de l'associatif :
+            </p>
+
+            <div class="formation-badges">
+              <span class="formation-badge">BTS Communication</span>
+              <span class="formation-badge">BTS NDRC (Négociation & Digitalisation)</span>
+              <span class="formation-badge">BTS MCO (Management Commercial)</span>
+              <span class="formation-badge">BUT Techniques de Commercialisation</span>
+              <span class="formation-badge">Marketing & Communication Digitale</span>
+              <span class="formation-badge">Gestion de Projet / Événementiel</span>
+              <span class="formation-badge">Développement Associatif & Sport</span>
+            </div>
+
+            <div style="background:rgba(255,255,255,0.03); border-left:3px solid var(--rouge); padding:16px 20px; margin-top:20px;">
+              <p style="font-size:0.95rem; color:var(--blanc); font-weight:600; margin-bottom:6px;">
+                💡 Pas de diplôme obligatoire !
+              </p>
+              <p style="font-size:0.88rem; color:var(--gris); line-height:1.6; margin:0;">
+                Niveau souhaité : Bac à Bac+2 (étudiant(e) en cours de formation ou équivalent). C'est avant tout votre <strong>motivation</strong>, votre <strong>sens du contact</strong>, votre <strong>sérieux</strong> et votre <strong>autonomie</strong> qui feront la différence.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pourquoi nous rejoindre -->
+          <div data-aos="fade-left">
+            <div class="section-label">L'aventure humaine</div>
+            <h2>Pourquoi nous <span class="grad-text">rejoindre ?</span></h2>
+            <p style="color:var(--gris); margin:16px 0; line-height:1.8;">
+              L'UST Talence Boxe, club affilié à la <strong>Fédération Française de Boxe depuis 25 ans</strong>, est une association dynamique engagée dans le sport, l'éducation et la vie de quartier.
+            </p>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; margin-top:20px;">
+              <li style="display:flex; gap:12px; font-size:0.95rem; color:rgba(245,245,245,0.9);">
+                <span style="color:var(--rouge); font-weight:700;">✓</span>
+                <span><strong>Des projets concrets</strong> : vous ne ferez pas de la figuration, vous serez acteur/actrice du développement du club.</span>
+              </li>
+              <li style="display:flex; gap:12px; font-size:0.95rem; color:rgba(245,245,245,0.9);">
+                <span style="color:var(--rouge); font-weight:700;">✓</span>
+                <span><strong>Un encadrement bienveillant</strong> : tuteur dédié pour vous guider, vous former et valoriser vos compétences professionnelles.</span>
+              </li>
+              <li style="display:flex; gap:12px; font-size:0.95rem; color:rgba(245,245,245,0.9);">
+                <span style="color:var(--rouge); font-weight:700;">✓</span>
+                <span><strong>Une expérience valorisante</strong> : tremplin idéal pour vos études, votre CV et votre réseau professionnel.</span>
+              </li>
+              <li style="display:flex; gap:12px; font-size:0.95rem; color:rgba(245,245,245,0.9);">
+                <span style="color:var(--rouge); font-weight:700;">✓</span>
+                <span><strong>Une grande famille sportive</strong> : immersion dans un club convivial aux côtés de champions et d'éducateurs passionnés.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- ══ CANDIDATURE & CONTACT ══ -->
+        <div class="apply-card" data-aos="fade-up">
+          <span style="display:inline-block; font-size:0.8rem; font-family:var(--font-sub); font-weight:800; letter-spacing:0.15em; color:var(--rouge); text-transform:uppercase; margin-bottom:8px;">
+            Candidatures ouvertes
+          </span>
+          <h2 style="font-size:clamp(2rem, 4vw, 3rem); margin-bottom:12px;">
+            Prêt(e) à monter <span class="grad-text">sur le ring ?</span>
+          </h2>
+          <p style="color:var(--gris); max-width:600px; margin:0 auto 28px; font-size:1rem; line-height:1.6;">
+            Envoyez votre CV ou quelques lignes présentant votre parcours et votre motivation au président Mohamed Ali Nouiri.
+          </p>
+          <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+            <a href="mailto:a.nouiri@live.fr?subject=Candidature%20Service%20Civique%20-%20UST%20Boxe&body=Bonjour%20Mohamed%20Ali,%0D%0A%0D%0AJe%20souhaite%20candidater%20%C3%A0%20l'offre%20de%20Service%20Civique%20au%20sein%20de%20l'UST%20Talence%20Boxe.%0D%0A%0D%0A[Pr%C3%A9sentez%20bri%C3%A8vement%20votre%20profil%20et%20joignez%20votre%20CV]%0D%0A%0D%0ACordialement," class="btn btn-rouge" id="apply-email-btn" style="padding:14px 28px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Postuler par Email
+            </a>
+            <a href="tel:+33618410680" class="btn btn-outline" id="apply-tel-btn" style="padding:14px 28px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              06 18 41 06 80
+            </a>
+            <a href="https://wa.me/33618410680?text=Bonjour%20Mohamed%20Ali,%20je%20souhaite%20avoir%20des%20renseignements%20sur%20l'offre%20de%20Service%20Civique%20%C3%A0%20l'UST%20Boxe." target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="apply-wa-btn" style="padding:14px 28px;">
+              WhatsApp
+            </a>
+          </div>
+          <p style="margin-top:20px; font-size:0.85rem; color:var(--gris);">
+            📍 Salle Pierre de Coubertin, Rue Salvador Allende, 33400 Talence (Quartier Thouars)
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

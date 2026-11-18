@@ -19,6 +19,7 @@ function getNavLinks() {
     { href: `${ROOT}pages/disciplines.html`,  label: 'Disciplines',  id: 'disciplines.html' },
     { href: `${ROOT}pages/planning-tarifs.html`, label: 'Horaires & Tarifs', id: 'planning-tarifs.html' },
     { href: `${ROOT}pages/palmares.html`,     label: 'Palmarès',     id: 'palmares.html' },
+    { href: `${ROOT}pages/evenements.html`,   label: 'Événements',   id: 'evenements.html' },
     { href: `${ROOT}pages/recrutement.html`,  label: 'Recrutement',  id: 'recrutement.html', isSpecial: true },
     { href: `${ROOT}pages/galerie.html`,      label: 'Galerie',      id: 'galerie.html' },
     { href: `${ROOT}pages/contact.html`,      label: 'Contact',      id: 'contact.html' },
@@ -69,11 +70,6 @@ function injectHeader() {
       <nav class="site-nav" role="navigation" aria-label="Navigation principale">
         ${navLinks}
       </nav>
-
-      <a href="${ROOT}pages/contact.html#essai" class="btn btn-rouge header-cta" id="header-cta-btn">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
-        Essai gratuit
-      </a>
 
       <button class="burger-btn" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
@@ -138,6 +134,7 @@ function injectFooter() {
             <li><a href="${ROOT}pages/disciplines.html">Nos disciplines</a></li>
             <li><a href="${ROOT}pages/planning-tarifs.html">Horaires & Tarifs</a></li>
             <li><a href="${ROOT}pages/palmares.html">Palmarès</a></li>
+            <li><a href="${ROOT}pages/evenements.html">Événements à venir</a></li>
             <li><a href="${ROOT}pages/galerie.html">Galerie</a></li>
             <li><a href="${ROOT}pages/contact.html">Contact</a></li>
             <li><a href="${ROOT}pages/recrutement.html" style="color:var(--rouge); font-weight:700;">Offre Service Civique</a></li>

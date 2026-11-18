@@ -3,7 +3,7 @@
  * PWA support & offline caching for ustboxe.com
  */
 
-const CACHE_NAME = 'ustboxe-cache-v2026';
+const CACHE_NAME = 'ustboxe-cache-v2026-11-events';
 const PRECACHE_ASSETS = [
   './',
   './index.html',
@@ -18,10 +18,13 @@ const PRECACHE_ASSETS = [
   './pages/disciplines.html',
   './pages/planning-tarifs.html',
   './pages/palmares.html',
+  './pages/evenements.html',
   './pages/galerie.html',
   './pages/contact.html',
   './pages/recrutement.html',
-  './pages/merci.html'
+  './pages/merci.html',
+  './assets/img/affiche-demi-finales-aquitaine-bordeaux-2026.jpg',
+  './assets/img/affiche-finales-regionales-la-rochelle-2026.jpg'
 ];
 
 self.addEventListener('install', (event) => {
@@ -86,4 +89,3 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
-
